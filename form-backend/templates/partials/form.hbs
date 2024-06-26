@@ -1,0 +1,31 @@
+ <div class="hero">
+        <div class="form_container">
+            <div class="form_container-buttons">
+                <div id="slider-wrapper"></div>
+                <button type="button" class="slider-buttons" onclick="login()" hretf="/login">Log In</button>
+                <button type="button" class="slider-buttons" onclick="register()" href="/register">Register</button>
+            </div>
+
+            <div class="social-icons">
+                <img src="../login-reg-img/fb.png" alt="fb img">
+                <img src="../login-reg-img/gp.png" alt="gp img">
+                <img src="../login-reg-img/tw.png" alt="tw img">
+            </div>
+
+            <form id="login" class="form-field" action="/login" method="POST">
+                <input type="text" class="input-field" placeholder="User Id" value="" name="userId" required>
+                <input type="password" class="input-field" placeholder="Enter Password" value="" name="enterpassword" required>
+                <input type="checkbox" class="check-box" ><span>Remember Password</span>
+                <input type="submit" class="submit-btn" value="Login" name="login">
+            </form>
+
+            <form id="register" class="form-field" action="/register" method="POST">
+                <input type="text" class="input-field" placeholder="User Id" value="" name="userId" >
+                <input type="email" class="input-field" placeholder="Email Id " value="" name="email" >
+                <input type="password" class="input-field" placeholder="Enter Password" value="" name="password" >
+                <input type="password" class="input-field" placeholder="Confirm Password" value="" name="confimpassword" >
+                <input type="checkbox" class="check-box"><span>I agree to the terms & conditions</span>
+                <input type="submit" class="submit-btn" value="Register" name="register">
+            </form>
+        </div> 
+    </div> 

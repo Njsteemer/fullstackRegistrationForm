@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration and Login Form</title>
+    <link rel="stylesheet" href="/form-frontend/style.css">
+</head>
+<body>
+    <div class="hero">
+        <div class="form_container">
+            <div class="form_container-buttons">
+                <div id="slider-wrapper"></div>
+                <button type="button" class="slider-buttons" onclick="login()">Log In</button>
+                <button type="button" class="slider-buttons" onclick="register()">Register</button>
+            </div>
+
+            <div class="social-icons">
+                <img src="./login-reg-img/fb.png" alt="fb img">
+                <img src="./login-reg-img/gp.png" alt="gp img">
+                <img src="./login-reg-img/tw.png" alt="tw img">
+            </div>
+
+            <form id="login" class="form-field">
+                <input type="text" class="input-field" placeholder="User Id" required>
+                <input type="password" class="input-field" placeholder="Enter Password" required>
+                <input type="checkbox" class="check-box"><span>Remember Password</span>
+                <button type="submit" class="submit-btn">Log In</button>
+            </form>
+
+            <form id="register" class="form-field">
+                <input type="text" class="input-field" placeholder="User Id" required>
+                <input type="email" class="input-field" placeholder="Email Id " required>
+                <input type="password" class="input-field" placeholder="Enter Password" required>
+                <input type="password" class="input-field" placeholder="Confirm Password" required>
+                <input type="checkbox" class="check-box"><span>I agree to the terms & conditions</span>
+                <button type="submit" class="submit-btn">Register</button>
+            </form>
+        </div>
+    </div> 
+
+
+    <script>
+        var loginFrom = document.getElementById("login");
+        var registerForm = document.getElementById("register");
+        var slider = document.getElementById("slider-wrapper");
+
+        function register(){
+            loginFrom.style.left = "-400px";
+            registerForm.style.left = "50px";
+           slider.style.left = "110px";
+        }
+
+        function login(){
+            loginFrom.style.left = "50px";
+            registerForm.style.left = "450px";
+           slider.style.left = "0";
+        }
+
+    </script>
+</body>
+</html>

@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 const userSchema = new mongoose.Schema({
-    userId: {
+    userId : {
         type:String,
         required:true,
         unique:true
@@ -16,12 +16,12 @@ const userSchema = new mongoose.Schema({
         required:true
     },
     confirmpassword: {
-        type:String,
+        type:String, 
         required:true
     }
 });
 
 //now we need to create a collections
-const Register = new mongoose.model("Register", userSchema);
+const Register = mongoose.model("Register", userSchema);
 
 module.exports = Register;

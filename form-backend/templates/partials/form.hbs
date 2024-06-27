@@ -12,20 +12,20 @@
                 <img src="../login-reg-img/tw.png" alt="tw img">
             </div>
 
-            <form id="login" class="form-field" action="/login" method="POST">
-                <input type="text" class="input-field" placeholder="User Id" value="" name="userId" required>
-                <input type="password" class="input-field" placeholder="Enter Password" value="" name="enterpassword" required>
+            <form id="login" class="form-field" action="/login" method="post">
+                <input type="text" class="input-field" placeholder="User Id" name="userId" required>
+                <input type="password" class="input-field" placeholder="Enter Password"  name="password" required>
                 <input type="checkbox" class="check-box" ><span>Remember Password</span>
-                <input type="submit" class="submit-btn" value="Login" name="login">
+                <input type="submit" class="submit-btn" name="login">
             </form>
 
-            <form id="register" class="form-field" action="/register" method="POST">
-                <input type="text" class="input-field" placeholder="User Id" value="" name="userId" >
-                <input type="email" class="input-field" placeholder="Email Id " value="" name="email" >
-                <input type="password" class="input-field" placeholder="Enter Password" value="" name="password" >
-                <input type="password" class="input-field" placeholder="Confirm Password" value="" name="confimpassword" >
+            <form id="register" class="form-field" action="/register" method="post">
+                <input type="text" class="input-field" placeholder="User Id" name="userId" >
+                <input type="email" class="input-field" placeholder="Email Id " name="email" >
+                <input type="password" class="input-field" placeholder="Enter Password" name="password" >
+                <input type="password" class="input-field" placeholder="Confirm Password" name="confirmpassword" >
                 <input type="checkbox" class="check-box"><span>I agree to the terms & conditions</span>
-                <input type="submit" class="submit-btn" value="Register" name="register">
+                <input type="submit" class="submit-btn">
             </form>
         </div> 
     </div> 

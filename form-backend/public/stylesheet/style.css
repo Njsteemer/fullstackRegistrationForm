@@ -134,3 +134,16 @@ span{
     left: 450px;
     top: 150px;
 }
+
+@media (max-width: 768px) {
+    .form_container {
+        width: 90%;
+    }
+    #login, #register {
+        position: relative;
+        left: 0;
+    }
+    #slider-wrapper {
+        width: 50%;
+    }
+}
